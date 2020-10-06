@@ -3,7 +3,8 @@ title: "R Notebook"
 output:
   html_document:
     df_print: paged
-name: Alex Levit
+author: Alex Levit
+date: "`r Sys.Date()`"
 ---
 
 
