@@ -1,7 +1,9 @@
 ---
 title: "R Notebook"
-output: html_notebook
-name: "Alex Levit"
+output:
+  html_document:
+    df_print: paged
+name: Alex Levit
 ---
 
 
@@ -13,7 +15,7 @@ library(tidyverse)
 
 Acá cargué todos los libraries de R necesarios
 
-```{r}
+```{r, message=F}
 arg <- get_election_data("arg",	"presi",	"gral",	2003)
 santafe <- arg %>%
 filter(name_prov == "SANTA FE")
