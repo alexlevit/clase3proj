@@ -1645,12 +1645,8 @@ summary {
 library(usethis)
 library(tidyverse)</code></pre>
 <p>Acá cargué todos los libraries de R necesarios</p>
-<pre class="r"><code>arg &lt;- get_election_data(&quot;arg&quot;, &quot;presi&quot;,    &quot;gral&quot;, 2003)</code></pre>
-<pre><code>## Warning: The `x` argument of `as_tibble.matrix()` must have unique column names if `.name_repair` is omitted as of tibble 2.0.0.
-## Using compatibility `.name_repair`.
-## This warning is displayed once every 8 hours.
-## Call `lifecycle::last_warnings()` to see where this warning was generated.</code></pre>
-<pre class="r"><code>santafe &lt;- arg %&gt;%
+<pre class="r"><code>arg &lt;- get_election_data(&quot;arg&quot;, &quot;presi&quot;,    &quot;gral&quot;, 2003)
+santafe &lt;- arg %&gt;%
 filter(name_prov == &quot;SANTA FE&quot;)</code></pre>
 <p>Acá descargué los datos de la elección en un dataset llamado “arg”. Usando el comando filter, creé un dataset “santafe” con los datos de la elección para esa provincia.</p>
 <pre class="r"><code>santafe %&gt;% 

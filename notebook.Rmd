@@ -8,7 +8,7 @@ date: "`r Sys.Date()`"
 ---
 
 
-```{r, message=F}
+```{r, message=F, warning=FALSE}
 library(polAr)
 library(usethis)
 library(tidyverse)
@@ -16,7 +16,7 @@ library(tidyverse)
 
 Acá cargué todos los libraries de R necesarios
 
-```{r, message=F}
+```{r, message=F, warning=FALSE}
 arg <- get_election_data("arg",	"presi",	"gral",	2003)
 santafe <- arg %>%
 filter(name_prov == "SANTA FE")
